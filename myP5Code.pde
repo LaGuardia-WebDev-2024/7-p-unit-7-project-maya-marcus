@@ -11,6 +11,15 @@ draw = function(){
  
   background(255,255,255,0);
   
+ellipse(170,268,75,75);//dog head
+ellipse(269,269,138,100);//dog body
+
+line (226,307,226,356);//leg
+line(253,318,254,356);//leg
+line(285,317,287,350); //leg
+line(315,306,320,351); //leg
+
+
 
 
 
