@@ -13,13 +13,17 @@ draw = function(){
   
 ellipse(170,268,75,75);//dog head
 ellipse(269,269,138,100);//dog body
+ellipse (57,330,75,70); //ball
+
 
 line (226,307,226,356);//leg
 line(253,318,254,356);//leg
 line(285,317,287,350); //leg
 line(315,306,320,351); //leg
 
-
+triangle(146,239,139,219,152,235); //left ear 
+triangle (178,232,187,218,187,235); // right ear 
+triangle (327,243,386,198,338,259); tail
 
 
 
