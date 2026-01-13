@@ -4,30 +4,48 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-
+var moveX=600
+var tonugeSize=20
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
   background(255,255,255,0);
-  
-ellipse(170,268,75,75);//dog head
-ellipse(269,269,138,100);//dog body
-ellipse (57,330,75,70); //ball
+  fill (150,75,0)
+ellipse(170 +moveX,268,75,75);//dog head
+ellipse(269 +moveX,269,138,100);//dog body
+fill (255,0,0)
+ellipse (57+moveX,330,75,70); //ball
+
+fill (0,0,0)
+ellipse (155+moveX,255,10,10); //left eye
+ellipse (180+moveX,255,10,10); //right eye
+
+fill (255,182,103)
+ellipse(169+moveX,273,7,7); //nose
+
+fill (0,0,0)
+ellipse(169+moveX,288,20,10); //outer mouth
+
+fill (219,112,147)
+ellipse(170+moveX,295,10,15); //tongue
 
 
-line (226,307,226,356);//leg
-line(253,318,254,356);//leg
-line(285,317,287,350); //leg
-line(315,306,320,351); //leg
-
-triangle(146,239,139,219,152,235); //left ear 
-triangle (178,232,187,218,187,235); // right ear 
-triangle (327,243,386,198,338,259); tail
 
 
 
+line (226+moveX,307,226+moveX,356);// 1st leg
+line(253+moveX,318,254+moveX,356);// 2nd leg
+line(285+moveX,317,287+moveX,350); // 3rd leg
+line(315+moveX,306,320+moveX,351); // 4th leg 
+ fill (150,75,0)
+triangle(146+moveX,239,139+moveX,219,152+moveX,235); //left ear 
+triangle (178+moveX,232,187+moveX,218,187+moveX,235); // right ear 
+triangle (327+moveX,243,386+moveX,198,338+moveX,259); // tail
 
+
+
+moveX-=1;
 
 
   if(mousePressed){showXYPositions();}
