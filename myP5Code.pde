@@ -5,7 +5,8 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var moveX=600
-var tonugeSize=20
+var tongueSize=20;
+var earSize=235;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -28,7 +29,7 @@ fill (0,0,0)
 ellipse(169+moveX,288,20,10); //outer mouth
 
 fill (219,112,147)
-ellipse(170+moveX,295,10,15); //tongue
+ellipse(170+moveX,295,10, tongueSize); //tongue
 
 
 
@@ -39,13 +40,15 @@ line(253+moveX,318,254+moveX,356);// 2nd leg
 line(285+moveX,317,287+moveX,350); // 3rd leg
 line(315+moveX,306,320+moveX,351); // 4th leg 
  fill (150,75,0)
-triangle(146+moveX,239,139+moveX,219,152+moveX,235); //left ear 
+triangle(146+moveX,239,139+moveX,219,152+moveX, earSize); //left ear 
 triangle (178+moveX,232,187+moveX,218,187+moveX,235); // right ear 
 triangle (327+moveX,243,386+moveX,198,338+moveX,259); // tail
 
 
 
 moveX-=1;
+if(moveX<50){moveX=600};
+
 
 
   if(mousePressed){showXYPositions();}
